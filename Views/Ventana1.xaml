@@ -12,6 +12,10 @@
             TextColor="White"
             FontSize="25"/>
 
+        <Image  Source="img1.jpg"
+                MaximumWidthRequest="250">
+        </Image>
+
         <Picker x:Name="pkIden" Title="IDENTIFICACIÓN">
             <Picker.Items>
                 <x:String>CEDULA</x:String>
