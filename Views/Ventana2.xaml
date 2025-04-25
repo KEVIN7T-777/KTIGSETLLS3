@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KTIGSETLLS3.Views.Ventana2"
+             Title="Ventana2">
+    <VerticalStackLayout Spacing="25" Padding="25">
+        <Label 
+            Text="DATOS INGRESADOS"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="30"/>
+
+        <Label x:Name="lblPkIden"
+               FontSize="18">
+        </Label>
+
+        <Label  x:Name="lblValorIden"
+                FontSize="18">
+        </Label>
+
+        <Label  x:Name="lblNombres"
+                FontSize="18">
+        </Label>
+
+        <Label  x:Name="lblApellidos"
+                FontSize="18">
+        </Label>
+
+        <Label  x:Name="lblFecha"
+                FontSize="18">
+        </Label>
+
+        <Label  x:Name="lblCorreo"
+                FontSize="18">
+        </Label>
+
+        <Label  x:Name="lblSalario"
+                FontSize="18">
+        </Label>
+
+        <Label  x:Name="lblAporteIess"
+                FontSize="18">
+        </Label>
+
+        <Button x:Name="btnExportar"
+                Text="EXPORTAR"
+                Clicked="btnExportar_Clicked">
+            
+        </Button>
+
+    </VerticalStackLayout>
+</ContentPage>

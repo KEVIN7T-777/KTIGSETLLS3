@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KTIGSETLLS3.Views.Ventana1"
+             Title="Ventana1">
+    <VerticalStackLayout Spacing="25" Padding="25">
+        <Label 
+            Text="KEVIN TIGSE - TALLER SEMANA 2"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            BackgroundColor="Blue"
+            TextColor="White"
+            FontSize="25"/>
+
+        <Picker x:Name="pkIden" Title="IDENTIFICACIÓN">
+            <Picker.Items>
+                <x:String>CEDULA</x:String>
+                <x:String>RUC</x:String>
+                <x:String>PASAPORTE</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Entry  x:Name="txtIdentificacion"
+                Placeholder="INGRESE LA IDENTIFICACIÓN"
+                PlaceholderColor="Black">
+        </Entry>
+
+        <Entry x:Name="txtNombres"
+               Placeholder="INGRESE SUS NOMBRES"
+               PlaceholderColor="Black">
+        </Entry>
+
+        <Entry  x:Name="txtApellidos"
+                Placeholder="INGRESE SUS APELLIDOS"
+                PlaceholderColor="Black">
+        </Entry>
+
+        <DatePicker x:Name="dpFec" Format="MM/dd/yyyy" >
+        </DatePicker>
+
+        <Entry  x:Name="txtCorreo"
+                Placeholder="INGRESE SU CORREO"
+                PlaceholderColor="Black">
+        </Entry>
+
+        <Entry  x:Name="txtSueldo"
+                Placeholder="INGRESE SU SALARIO"
+                PlaceholderColor="Black"
+                TextChanged="txtSueldo_TextChanged">
+        </Entry>
+
+        <Label  x:Name="lblInfo"
+                FontSize="15"
+                TextColor="Red">
+        </Label>
+
+        <Button x:Name="btnGuardar"
+                Clicked="btnGuardar_Clicked"
+                Text="GUARDAR">
+        </Button>
+
+    </VerticalStackLayout>
+</ContentPage>
